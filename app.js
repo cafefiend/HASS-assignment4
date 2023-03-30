@@ -13,7 +13,7 @@ function setupSvg() {
 
 async function loadData() {
     const [mapData, popData] = await 
-    Promise.all([d3.json("data/sgmap.json"), 
+    Promise.all([d3.json("sgmap.json"), 
     d3.csv("population2022.csv")])
     state['mapData'] = mapData
     state['subzoneToPopMap'] = {}
